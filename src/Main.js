@@ -1,19 +1,27 @@
-import React from "react";
-import hornedBeast1 from "./img/placeholder1.jpg"
-import hornedBeast2 from "./img/placeholder2.jpg"
-import HornedBeast from './HornedBeast';
+
+import React from 'react';
+import HornedBeast from './HornedBeast.js';
+import AnimalData from './data.json';
 
 class Main extends React.Component {
-  render(){
-    return (
-      <main>
-      <div className='hornedBeastMain'>
-        <HornedBeast title='Horned Beast 1' imageURL={hornedBeast1} description='Description of Horned Beast 1'/>
-        <HornedBeast title='Horned Beast 2' imageURL={hornedBeast2}  description='Description of Horned Beast 2'/>
-      </div> 
-      </main>
+  render() {
+    let hornedBeastsArray = [];
+    AnimalData.forEach((beast, idx) => {
+      hornedBeastsArray.push(
+        <HornedBeast
+          title={beast.title}
+          imageUrl={beast.image_url}
+          description={beast.description}
+          key={idx}
+          />
       )
-    }
+    });
+    return (
+      <>
+        {hornedBeastsArray}
+      </>
+    );
   }
-
+}
+  
   export default Main;
