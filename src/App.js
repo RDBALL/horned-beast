@@ -4,7 +4,8 @@ import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
 
-function App() {
+class App extends React.Component {
+  render () {
   return (
   <div className="App">
     <Header />
@@ -12,5 +13,6 @@ function App() {
     <Footer />
   </div>
   );
+  }
 }
 export default App;
