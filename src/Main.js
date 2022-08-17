@@ -1,24 +1,23 @@
 
 import React from 'react';
 import HornedBeast from './HornedBeast.js';
-import AnimalData from './data.json';
 
 class Main extends React.Component {
   render() {
-    let hornedBeastsArray = [];
-    AnimalData.forEach((beast, index) => {
-      hornedBeastsArray.push(
+    let beasts = this.props.beasts.map((beast) => {
+      return (
         <HornedBeast
           title={beast.title}
           imageUrl={beast.image_url}
           description={beast.description}
-          key={index}
+          key={beast._id}
+          showModalHandler={this.props.showModalHandler}
           />
       )
     });
     return (
       <>
-        {hornedBeastsArray}
+        {beasts}
       </>
     );
   }

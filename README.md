@@ -41,3 +41,17 @@ Estimate of time needed to complete: **1 hours**
 ***Actual time needed to complete: 30 minutes***
 
 After importing Bootstrap I took about an hour to modify CSS beyond what the Bootstrap Library provided.
+
+## Lab 03
+
+> ### Feature #1: Display a Modal
+
+Estimate of time needed to complete: **2 hours**
+
+* Start time: 1:30pm
+
+* Finish time: 4:30pm
+
+***Actual time needed to complete: 3 hours***
+
+Seeing Armen Akabekians code during the zoom office hour put me on the right path for getting the modal functionality to work
