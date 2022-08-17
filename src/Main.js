@@ -4,13 +4,14 @@ import HornedBeast from './HornedBeast.js';
 
 class Main extends React.Component {
   render() {
-    let beasts = this.props.beasts.map((beast, index) => {
+    let beasts = this.props.beasts.map((beast) => {
       return (
         <HornedBeast
           title={beast.title}
           imageUrl={beast.image_url}
           description={beast.description}
-          key={index}
+          key={beast._id}
+          showModalHandler={this.props.showModalHandler}
           />
       )
     });

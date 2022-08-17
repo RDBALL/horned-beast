@@ -50,6 +50,8 @@ Estimate of time needed to complete: **2 hours**
 
 * Start time: 1:30pm
 
-* Finish time: 
+* Finish time: 4:30pm
 
-***Actual time needed to complete:  hours***
+***Actual time needed to complete: 3 hours***
+
+Seeing Armen Akabekians code during the zoom office hour put me on the right path for getting the modal functionality to work
