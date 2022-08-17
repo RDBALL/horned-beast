@@ -4,6 +4,7 @@ This app will serve as a gallery where you will be able to view images of animal
 
 This is the first React app created in week one of Code Fellows 301.
 
+> ### [Horned Beast App](https://rdball-horned-beast.netlify.app/) deployed on netlify
 
 ## Lab 02
 
