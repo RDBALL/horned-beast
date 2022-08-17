@@ -18,14 +18,18 @@ class HornedBeast extends React.Component {
   render() {
     return (
       <>
-      <Card 
-      border="light" 
-      bg="primary"
+      <Card className='hornedBeastCard'
+      border="primary" 
+      bg="dark"
       text='light'
-      style={{ width: '22rem', margin: '10px', textAlign: 'center'}}>
+      >
         <Card.Body>
         <Card.Title>{this.props.title}</Card.Title>
-        <Card.Header>Click the Picture if you like this Animal! <br></br> {this.props.title} has {this.state.clicks} likes</Card.Header>
+        <Card.Header className='hornedBeastCardHeader'>
+          Click the Picture if you like this Animal! 
+          <br></br> 
+          {this.props.title} has {this.state.clicks} likes
+          </Card.Header>
         <Card.Img
           src={this.props.imageUrl}
           alt={this.props.description}

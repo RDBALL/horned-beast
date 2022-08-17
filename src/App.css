@@ -1,7 +1,33 @@
 .App {
   text-align: center;
-  background-color: black;
 }
+
+.cardLayout {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 4rem;
+}
+
+.hornedBeastCard {
+  width: 22rem;
+  margin: 10px;
+  text-align: center;
+	box-shadow: 0 3px 23px rgba(0, 0, 0, 0.7)  ; 
+	-webkit-box-shadow: 0 3px 23px rgba(0, 0, 0, 0.7)  ; 
+	-moz-box-shadow: 0 3px 23px rgba(0, 0, 0, 0.7)  ; 
+}
+
+.hornedBeastCard img {
+  max-height: auto;
+  max-width: 15em;
+  padding-bottom: 2rem;
+}
+
+.hornedBeastCardHeader {
+  font-size: 1rem;
+}
+
 
 .App-logo {
   height: 40vmin;
