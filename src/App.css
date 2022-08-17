@@ -22,6 +22,7 @@
   max-height: auto;
   max-width: 15em;
   padding-bottom: 2rem;
+  cursor: pointer;
 }
 
 .hornedBeastCardHeader {

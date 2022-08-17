@@ -1,13 +1,11 @@
 
 import React from 'react';
 import HornedBeast from './HornedBeast.js';
-import AnimalData from './data.json';
 
 class Main extends React.Component {
   render() {
-    let hornedBeastsArray = [];
-    AnimalData.forEach((beast, index) => {
-      hornedBeastsArray.push(
+    let beasts = this.props.beasts.map((beast, index) => {
+      return (
         <HornedBeast
           title={beast.title}
           imageUrl={beast.image_url}
@@ -18,7 +16,7 @@ class Main extends React.Component {
     });
     return (
       <>
-        {hornedBeastsArray}
+        {beasts}
       </>
     );
   }
