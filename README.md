@@ -5,31 +5,36 @@ This app will serve as a gallery where you will be able to view images of animal
 This is the first React app created in week one of Code Fellows 301.
 
 
-## Feature #1: Display images
+## Lab 02
 
-Estimate of time needed to complete: 1 hour
-Start time: 1:36pm
+### Feature #1: Display images
 
-Finish time: _____
+>Estimate of time needed to complete: 1 hour
 
-Actual time needed to complete: _____
+* Start time: 1:36pm
 
-## Feature #2: Allow users to vote for their favorite beast
+* Finish time: 3:00pm
 
-Estimate of time needed to complete: 1.5 hours
+**Actual time needed to complete: 1.5 hours**
 
-Start time: _____
+### Feature #2: Allow users to vote for their favorite beast
 
-Finish time: _____
+> Estimate of time needed to complete: 1.5 hours
 
-Actual time needed to complete: _____
+* Start time: 3:00pm
 
-## Feature 3: Bootstrap
+* Finish time: 4:00pm
 
-Estimate of time needed to complete: 1 hours
+**Actual time needed to complete: 1 hour**
 
-Start time: _____
+### Feature 3: Bootstrap
 
-Finish time: _____
+> Estimate of time needed to complete: 1 hours
 
-Actual time needed to complete: _____
+* Start time: 4:00pm
+
+* Finish time: 4:30pm
+
+**Actual time needed to complete: 30 minutes**
+
+After importing Bootstrap I took about an hour to modify CSS beyond what the Bootstrap Library provided.
