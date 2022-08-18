@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './Header.js';
-import Main from './Main.js';
-import Footer from './Footer.js';
+import Header from './components/Header.js';
+import Main from './components/Main.js';
+import Footer from './components/Footer.js';
 import AnimalData from './data.json'
-import './App.css';
-import './Header.css';
-import './Footer.css';
+import './styles/App.css';
+import './styles/Header.css';
+import './styles/Footer.css';
 import { Modal } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -56,11 +56,8 @@ class App extends React.Component {
             <Modal.Title>{this.state.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <img src={this.state.imgurl} alt={this.state.description} width="100%" height="auto" />
+            <img src={this.state.imgurl} alt={this.state.description} width="100%" height="100%" />
           </Modal.Body>
-          <Modal.Footer>
-            {this.state.description}
-          </Modal.Footer>
         </Modal>
       </>
     );

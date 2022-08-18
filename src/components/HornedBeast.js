@@ -22,7 +22,7 @@ class HornedBeast extends React.Component {
     return (
       <>
       <Card className='hornedBeastCard'
-      border="primary" 
+      border="light" 
       bg="dark"
       text='light'
       >

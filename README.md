@@ -55,3 +55,5 @@ Estimate of time needed to complete: **2 hours**
 ***Actual time needed to complete: 3 hours***
 
 Seeing Armen Akabekians code during the zoom office hour put me on the right path for getting the modal functionality to work
+
+Centering modal on screen with CSS [StackOverflow](https://stackoverflow.com/questions/20944334/how-to-center-a-modal-window-on-a-page)

@@ -2,6 +2,48 @@
   text-align: center;
 }
 
+.modal {
+  text-align: center;
+  padding: 0;
+}
+
+.modal-content{
+  border: solid 3px rgb(255, 255, 255)!important;
+}
+
+.modal-header {
+  background-color: rgb(29, 29, 29);
+}
+
+.modal-title {
+  color: #fff;
+  text-align: center!important;
+  width: 100%;
+}
+
+.modal-body img {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 25px;
+}
+
+.btn-close {
+  background-color: white!important;
+  border: 10px solid white!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
 .cardLayout {
   display: flex;
   justify-content: space-evenly;
