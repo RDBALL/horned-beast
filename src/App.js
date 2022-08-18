@@ -56,11 +56,8 @@ class App extends React.Component {
             <Modal.Title>{this.state.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <img src={this.state.imgurl} alt={this.state.description} width="100%" height="auto" />
+            <img src={this.state.imgurl} alt={this.state.description} width="100%" height="100%" />
           </Modal.Body>
-          <Modal.Footer>
-            {this.state.description}
-          </Modal.Footer>
         </Modal>
       </>
     );
