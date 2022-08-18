@@ -2,7 +2,7 @@ header {
   width: 100%;
   display: flex;
   text-align: center;
-  position: fixed;
+  position: 0, 0;
   z-index: 999;
   background-color: black;
 }

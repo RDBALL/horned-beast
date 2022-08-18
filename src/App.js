@@ -6,7 +6,7 @@ import AnimalData from './data.json'
 import './styles/App.css';
 import './styles/Header.css';
 import './styles/Footer.css';
-import { Modal } from 'react-bootstrap';
+import { Modal, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
@@ -16,7 +16,8 @@ class App extends React.Component {
       showModal: false,
       title: '',
       imgurl: '',
-      description: ''
+      description: '',
+      filteredHornCount: AnimalData,
     }
   }
 
@@ -39,14 +40,45 @@ class App extends React.Component {
     });
   };
 
+  handleSelect = event => {
+    let choice = event.target.value;
+    if (choice === 'oneHorn') {
+      let newData = AnimalData.filter(animal => animal.horns === 1);
+      this.setState({filteredHornCount: newData});
+    } else
+      if (choice === 'twoHorns') {
+        let newData = AnimalData.filter(animal => animal.horns === 2 || animal.horns === 3);
+        this.setState({filteredHornCount: newData});
+      } else
+      if (choice === 'overTwoHorns') {
+        let newData = AnimalData.filter(animal => animal.horns === 100);
+        this.setState({filteredHornCount: newData});
+      } else {
+        this.setState({
+          filteredHornCount: AnimalData
+        })
+      }
+  }
+
   render() {
 
     return (
       <>
         <Header />
+        <Form className="dropDownFilter">
+            <Form.Label >Filter the gallery by number of horns</Form.Label>
+            <Form.Select
+              name="select"
+              onChange={this.handleSelect}>
+              <option value="all">All Horned Beasts</option>
+              <option value="overTwoHorns">Beasts with more than 2 horns</option>
+              <option value="twoHorns">Beasts with 2 horns</option>
+              <option value="oneHorn">Beasts with 1 horn</option>
+            </Form.Select>
+          </Form>
         <div className="cardLayout">
           <Main
-            beasts={AnimalData}
+            beasts={this.state.filteredHornCount}
             showModalHandler={this.showModalHandler}
           />
         </div>
